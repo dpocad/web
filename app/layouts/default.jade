@@ -1,0 +1,85 @@
+doctype html
+html.no-js
+  head
+    meta(charset='utf-8')
+    title dpoCAD
+    meta(name='description' content='2D/3D planner for the web.')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+
+    // build:css styles/main.css
+    link(rel='stylesheet' href='styles/main.css')
+    // endbuild
+
+    // build:js scripts/vendor/modernizr.js
+    script(src='../bower_components/modernizr/modernizr.js')
+    // endbuild
+
+  body
+    | <!--[if lt IE 10]>
+    |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    | <![endif]-->
+
+
+    body
+    nav.white(role='navigation')
+      .nav-wrapper.container
+        a#logo-container.brand-logo.indigo-text(href='#') dpoCAD
+        ul.right.hide-on-med-and-down
+          //li
+            a(href='https://github.com/dpocad') Github
+        ul#nav-mobile.side-nav
+          //li
+            a(href='https://github.com/dpocad') Github
+        a.button-collapse(href='#', data-activates='nav-mobile')
+          i.mdi-navigation-menu
+
+    block content
+
+    footer.page-footer.blue-grey.lighten-1
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text dpoCAD
+            p.grey-text.text-lighten-4 2D / 3D planner centered around modern web.
+
+          .col.l3.s12.offset-l1
+            h5.white-text Connect
+            p.grey-text.text-lighten-4 Örnek Mh. Kılıçalipaşa Sk. No: 16/4 Ataşehir, İstanbul
+            p
+              a.grey-text.text-lighten-4(href="mailto:info@dpocad.com") info@dpocad.com
+
+      .footer-copyright
+        .container.row
+          .col
+           p Made in İstanbul with ♥
+          .right
+
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-69349054-1', 'auto');
+      ga('send', 'pageview');
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/materialize/bin/materialize.js')
+    // endbower
+    // endbuild
+
+    // build:js scripts/plugins.js
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
