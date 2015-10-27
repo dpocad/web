@@ -122,10 +122,8 @@ gulp.task 'build', [
     gzip: true)
 
 gulp.task 'deploy', ['build'], () ->
-  remoteUrl = url.parse pkg.repository.url
-  # Add travis secure to remote url
   options =
-    remoteUrl: "#{remoteUrl.protocol}//#{process.env.GH_TOKEN}@#{remoteUrl.host}#{remoteUrl.pathname}"
+    remoteUrl: pkg.repository.url
   gulp.src './dist/**/*'
     .pipe ($.ghPages options)
 
