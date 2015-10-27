@@ -37,6 +37,7 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "test": "gulp test"
   }
 }
