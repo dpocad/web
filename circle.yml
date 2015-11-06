@@ -13,4 +13,4 @@ dependencies:
 
 test:
   override:
-    gulp deploy
+    - gulp deploy
