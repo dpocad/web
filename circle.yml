@@ -1,0 +1,16 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+dependencies:
+  pre:
+    - npm install -g gulp bower
+  post:
+    # configure git to commit & deploy to gh-pages
+    - git config --global user.name "Circle CI"
+    - git config --global user.email "build@circleci.com"
+
+test:
+  override:
+    gulp deploy
