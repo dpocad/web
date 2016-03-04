@@ -10,6 +10,7 @@ $icons-font-path: "../fonts/" !default;
 nav ul a,
 nav .brand-logo {
   color: #444;
+  padding-top: 9px;
 }
 
 p {
@@ -54,6 +55,10 @@ p {
 
 footer.page-footer {
   margin: 0;
+
+  img.logo {
+    height: 37px;
+  }
 
   .footer-copyright {
     line-height: 80px;
