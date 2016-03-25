@@ -7,10 +7,16 @@ $icons-font-path: "../fonts/" !default;
 @import "bower_components/materialize/sass/materialize.scss";
 // endbower
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
-  padding-top: 9px;
+nav {
+  ul a,
+  .brand-logo {
+    color: #444;
+    padding-top: 9px;
+  }
+
+  .nav-wrapper {
+    line-height: 55px;
+  }
 }
 
 p {
