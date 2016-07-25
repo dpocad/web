@@ -127,6 +127,9 @@ gulp.task 'deploy', ['build'], () ->
   gulp.src './dist/**/*'
     .pipe ($.ghPages options)
 
+gulp.task 'test', ->
+  return
+
 gulp.task 'default', [ 'clean' ], ->
   gulp.start 'build'
   return
