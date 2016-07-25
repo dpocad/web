@@ -8,8 +8,8 @@
 
     // open initial modals
     $('.modal.initial-open').each(function() {
-      $(this).openModal()
-    })
+      $(this).openModal();
+    });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
